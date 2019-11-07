@@ -5,6 +5,16 @@
  * to style up the website so it is useable.
  */
 
+ @import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+
+ /* Poor man's normalize */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -13,4 +23,303 @@
 /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
     display: none;
+}
+
+/* Hide large logo*/
+
+.site-logo img {
+    display: none;
+}
+
+.site-logo-text-icon img {
+    display: none;
+}
+
+/* Global */
+
+html {
+    overflow-y: scroll;
+}
+
+p {
+    margin: 16px 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Nixie One", sans-serif;
+    font-weight: bold;
+    line-height: 150%;
+    border-bottom: solid 1px #666;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+.wrap-all {
+    background-color: #f0f3f6;
+}
+
+.row::after {
+    clear: both;
+}
+
+/* Header */
+
+.outer-wrap-header {
+    background-color: #f0f3f6;
+}
+
+.inner-wrap-header {
+    width: 80%;
+    margin: auto;
+    padding-top: 2em;
+}
+
+.region-header-col-1 {
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.region-header-col-2 {
+    width: 100%;
+    margin:auto;
+    padding-bottom: 1em;
+}
+
+.site-logo-text a {
+    color: #333;
+    font-size: 5em;
+    font-family: "Nixie One";
+    text-decoration: none;
+}
+
+/* Navigation */
+.my-navbar {
+    text-align: center;
+}
+
+.my-navbar li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.my-navbar a {
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0.8em;
+}
+
+.my-navbar a:hover {
+    color: #999;
+}
+
+
+/* Flash */
+
+.outer-wrap-flash {
+    width: 80%;
+    margin: auto;
+}
+
+/* Breadcrumb*/
+
+.region-breadcrumb li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.region-breadcrumb a {
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.region-breadcrumb a:hover {
+    color: #999;
+}
+
+/* Next previous*/
+
+.next-previous a {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.next-previous a {
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.region-breadcrumb a:hover {
+    color: #999;
+}
+
+/* Main */
+
+.outer-wrap-main,
+.outer-wrap-breadcrumb {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    padding: 1em;
+}
+
+.has-sidebar {
+    width: 70%;
+}
+
+.has-sidebar-right {
+    float: left;
+}
+
+.has-sidebar-left {
+    float: right;
+}
+
+article {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+article p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    line-height: 150%;
+    max-width: 90%;
+    font-weight: normal;
+}
+
+article h1 {
+    line-height: 150%;
+}
+
+.right img {
+    float: right;
+    margin: 2em;
+}
+
+.left img {
+    float: left;
+    margin-right: 2em;
+}
+
+.byline {
+    border: 1px solid grey;
+    padding: 0.5em;
+    overflow:auto;
+    margin-top: 2em;
+}
+
+.byline p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    line-height: 150%;
+    max-width: 90%;
+    font-weight: normal;
+}
+
+/* Sidebar */
+
+.wrap-sidebar {
+    width: 30%;
+}
+
+.wrap-sidebar>.block li {
+    list-style-type: none;
+}
+
+.region-sidebar-right {
+    float:right;
+}
+
+.region-sidebar-right>.block {
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    margin: 1em;
+    padding: 1em;
+}
+
+.region-sidebar-right>.block a {
+    text-decoration: none;
+    color: #0e5555
+}
+
+.region-sidebar-right>.block a:hover {
+    text-decoration: none;
+    color: #1ca7a7
+}
+
+.region-sidebar-left {
+    float:left;
+}
+
+.block .toc li {
+    list-style-type: none;
+}
+
+.block .toc a {
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.2em;
+    line-height: 170%;
+}
+
+.block .toc a:hover {
+    color: white;
+}
+
+ /* Footer */
+
+.outer-wrap-footer {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    color: #c1cdcc;
+
+}
+
+.region-footer {
+    padding: 2em 0 2em 0;
+}
+
+.inner-wrap-footer {
+    width: 80%;
+    margin: auto;
+}
+
+.footer-column {
+    width: 33%;
+    float: left;
+    padding: 0 1em 2em 1em;
+}
+
+.region-footer>.block {
+    text-align:center;
 }

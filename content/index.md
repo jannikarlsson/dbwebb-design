@@ -1,25 +1,20 @@
 ---
-title: "Min fina titel"
+title: "Jannis me-sida"
 ---
-Min me-sida i kursen design
+Jannis me-sida i designkursen
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+[FIGURE src="image/kamel.jpg?w=400" class="right"]
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+Jag är 33 år gammal och bor i Malmö sedan några år tillbaka, där jag jobbar med kommunikation på Malmö universitet. Jag har en grundutbildning i medie- och kommunikationsvetenskap bland annat, men är även kronisk distansstudent med poäng från åtta lärosäten, främst grundkurser i olika språk har det blivit.
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Teknisk design och användbarhet är min andra kurs i kurspaketet som jag läser på halvtid vid sidan om mitt jobb. 
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+På fritiden reser jag en hel del, gärna till ställen där man kan tälta, vandra och/eller prata spanska. Jag har årskort till både fotboll och teater, läser gärna västerbottniska klassiker, odlar potatis på terrassen när klimatet tillåter och tröstar mig med krukväxterna resten av året, och eftersom vi förra året flyttade in i en sekelskifteslägenhet ska ett något påtvingat intresse för byggnadsvård också underhållas.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+<div class="byline">
+[FIGURE src="image/me-byline.png?w=100" class="left"]
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
+<p>Janni Karlsson är student på kursen Teknisk design och användbarhet på Blekinge tekniska högskola höstterminen 2019.</p>
 
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+</div>
