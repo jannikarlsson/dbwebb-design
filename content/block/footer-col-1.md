@@ -1,3 +1,3 @@
-#### Footer col 1
+#### Diskutera
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+I kursens [gitterchatt](https://gitter.im/dbwebb-se/design) kan man diskutera problem som uppstår.
