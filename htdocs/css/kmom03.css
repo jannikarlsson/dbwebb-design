@@ -1,7 +1,7 @@
 /*!
- * LESS stylesheet for kmom02.
+ * LESS stylesheet for kmom03.
  *
- * This stylesheet is for the design course and kmom02. Its intention is to
+ * This stylesheet is for the design course and kmom03. Its intention is to
  * use kmom01.css and lessify the style and use this as a wrapper for the new
  * style.
  */
@@ -4986,6 +4986,329 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Style
  */
 /**
+ * Import the typographic grid.
+ */
+/**
+ * Typographic font families to choose from.
+ */
+/**
+ * Typographic defaults.
+ */
+#desinax-hgrid {
+  /**
+     * Mixins used when setting default fonts
+     */
+  /**
+     * Settings for headings H1-H6
+     */
+  /**
+     * Text elements
+     */
+  /**
+     * Display source code.
+     */
+  /**
+     * Lists
+     */
+  /**
+     * Tables. Because of the need for padding on TH and TD, the vertical rhythm
+     * on table cells has to be 1.5*@magic-number.
+     */
+  /**
+     * More typography elements
+     */
+  /**
+     * Enable all default typographic elements.
+     */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nixie One", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+  margin: 0;
+}
+h1 {
+  font-size: 2.375em;
+  line-height: 1.26315789;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 23px;
+}
+h1 ~ h1,
+h1 ~ h2,
+h1 ~ h3,
+h1 ~ h4,
+h1 ~ h5,
+h1 ~ h6 {
+  margin-top: 48px;
+}
+h1 + h2 {
+  margin-top: 24px;
+}
+h2 {
+  font-size: 1.875em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #CCC;
+}
+h2 + h3 {
+  margin-top: 24px;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.71428571;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h3 + h4 {
+  margin-top: 24px;
+}
+h4 {
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h4 + h5 {
+  margin-top: 24px;
+}
+h5 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h5 + h6 {
+  margin-top: 24px;
+}
+h6 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+p {
+  margin-bottom: 24px;
+}
+small,
+.small,
+.smaller {
+  font-size: 0.875em;
+}
+strong,
+b {
+  font-weight: bold;
+}
+mark {
+  color: #000;
+  background-color: #ff9;
+}
+abbr[title],
+dfn[title] {
+  text-decoration: dotted underline;
+}
+em,
+i,
+dfn {
+  font-style: italic;
+}
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+pre,
+code,
+kbd,
+samp,
+.code {
+  font-family: "monospace";
+}
+code,
+samp {
+  border: 1px solid #ccc;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+code {
+  background-color: #eee;
+}
+pre,
+div.code,
+pre code {
+  font-size: 1em;
+  line-height: 1.5;
+  white-space: pre;
+}
+pre {
+  margin-bottom: 24px;
+}
+pre code {
+  display: block;
+  overflow: auto;
+}
+div.code,
+pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+ul,
+ol {
+  margin-bottom: 24px;
+  padding-left: 1.5em;
+}
+ul p,
+ol p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 0;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+dl {
+  margin-bottom: 24px;
+}
+dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+dd {
+  margin-left: 1.5em;
+}
+article table,
+.table,
+.table1,
+.table2 {
+  margin-bottom: 24px;
+}
+table.full-width,
+article .table,
+.table,
+.table2 {
+  width: 100%;
+}
+article table,
+.table,
+.table2 {
+  border-collapse: collapse;
+  /*
+            tfoot {
+            }
+            */
+}
+article table caption,
+.table caption,
+.table2 caption {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+  text-align: left;
+  font-style: italic;
+}
+article table thead,
+.table thead,
+.table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+article table th,
+.table th,
+.table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+article table th,
+.table th,
+.table2 th,
+article table td,
+.table td,
+.table2 td {
+  padding: 6px;
+}
+article table tr,
+.table tr,
+.table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+article table tr:hover,
+.table tr:hover,
+.table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+table.striped tbody tr:nth-child(even) td,
+table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+hr::after {
+  content: "§";
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
+.hgrid .inner-wrap {
+  background-image: url("../img/magic-number-24px.png");
+}
+/**
  * Base style to affect HTML elements on a general scale.
  */
 /* Hide submenu, leave this to kmom02 */
@@ -5004,6 +5327,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
+}
+body {
+  font: 16px/1.5 "Open Sans", sans-serif;
 }
 .wrap-all {
   background-color: #f0f3f6;
@@ -5052,7 +5378,6 @@ html {
   color: #333;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  font-size: 1em;
 }
 .region-breadcrumb a:hover {
   color: #999;
@@ -5072,9 +5397,6 @@ html {
   color: #999;
 }
 /* Main */
-p {
-  margin: 16px 0;
-}
 ul {
   padding: 0;
 }
@@ -5085,37 +5407,16 @@ h4,
 h5 {
   font-family: "Nixie One", sans-serif;
   font-weight: bold;
-  line-height: 150%;
   border-bottom: solid 1px #666;
   width: 90%;
-}
-h1 {
-  font-size: 2em;
-}
-h2 {
-  font-size: 1.7em;
-}
-h3 {
-  font-size: 1.5em;
-}
-h4 {
-  font-size: 1.3em;
-}
-h5 {
-  font-size: 1.2em;
 }
 article {
   padding-bottom: 3em;
 }
 article p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  line-height: 150%;
   max-width: 90%;
   font-weight: normal;
-}
-article h1 {
-  line-height: 150%;
 }
 /*
 article img {
@@ -5138,8 +5439,6 @@ article img {
 }
 .byline p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  line-height: 150%;
   max-width: 90%;
   font-weight: normal;
 }
@@ -5150,7 +5449,6 @@ article img {
 .region-sidebar-right > .block {
   background-color: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
   margin: 1em;
   padding: 1em;
 }
@@ -5170,8 +5468,6 @@ article img {
   font-family: sans-serif;
   text-decoration: none;
   font-weight: lighter;
-  font-size: 1.2em;
-  line-height: 170%;
 }
 .block .toc a:hover {
   color: white;
@@ -5196,6 +5492,167 @@ article img {
   color: grey;
 }
 /**
+ * Import the vertical grid.
+ */
+/**
+ * Fluid and Responsive Vertical Grid
+ */
+/**
+ * Namespace what could be namespaced
+ */
+#desinax-vgrid {
+  /**
+     * Wrap grid in a container.
+     */
+  /**
+     * Show grid.
+     */
+  /**
+     * All columns must be wrapped in a row.
+     */
+  /**
+     * Create a column spanning @col columns.
+     */
+  /**
+     * Push a column @offset columns.
+     */
+  /**
+     * Pull a column left @offset columns.
+     */
+  /**
+     * Pull a column right @offset columns.
+     */
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/* General */
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+  margin-bottom: 12px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 1100px) {
+  .vgrid .inner-wrap {
+    background-size: 1100px auto;
+  }
+}
+.vgrid .inner-wrap.inner-wrap-header,
+.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header,
+  .vgrid .inner-wrap.inner-wrap-footer {
+    background-size: 100% auto;
+  }
+}
+/**
+  * Variables
+  */
+/**
+  * General layout
+  */
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+/* Header */
+.inner-wrap-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+/* Flash */
+.region-flash {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/* Breadcrumb */
+/* Previous next */
+.next-previous {
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/* Main */
+.region-breadcrumb {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.region-main {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/* Sidebar page */
+.has-sidebar {
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.wrap-sidebar {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.has-sidebar-right,
+.region-sidebar-left {
+  float: left;
+}
+.has-sidebar-left,
+.region-sidebar-right {
+  float: right;
+}
+/* Footer */
+.inner-wrap-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+.footer-column {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/*
+// Default grid, change to fit your requirements.
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+@gridType:      "float"; // "flex"
+*/
+/**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
@@ -5206,78 +5663,25 @@ article img {
 /**
  * Variables
  */
-/**
- * General layout
- */
-* {
-  box-sizing: border-box;
-}
-.inner-wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-}
 /* Header */
-.inner-wrap-header {
-  width: 80%;
-  margin: auto;
-  padding-top: 2em;
-}
-.region-header-col-1 {
-  width: 80%;
-  margin: 2em auto;
-}
-.region-header-col-2 {
-  width: 100%;
-  margin: auto;
-  padding-bottom: 1em;
-}
 /* Flash */
-.inner-wrap-flash {
-  max-width: 80%;
-  margin: auto;
-}
 /* Main */
 .outer-wrap-main,
 .outer-wrap-breadcrumb {
-  width: 80%;
-  margin: auto;
   overflow: auto;
-  padding: 1em;
 }
 /* Sidebar page */
-.has-sidebar {
-  width: 70%;
-}
-.has-sidebar-right {
-  float: left;
-}
-.has-sidebar-left {
-  float: right;
-}
-.wrap-sidebar {
-  width: 30%;
-}
-.region-sidebar-right {
-  float: right;
-}
+.has-sidebar-right,
 .region-sidebar-left {
   float: left;
 }
+.has-sidebar-left,
+.region-sidebar-right {
+  float: right;
+}
 /* Footer */
-.outer-wrap-footer {
-  width: 100%;
-}
-.region-footer {
-  padding: 2em 0 2em 0;
-}
-.inner-wrap-footer {
-  width: 80%;
-  margin: auto;
-}
 .footer-column {
-  width: 33%;
   float: left;
-  padding: 0 1em 2em 1em;
 }
 /**
  * Layout for responsive style through media queries.

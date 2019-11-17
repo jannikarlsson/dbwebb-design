@@ -17,12 +17,16 @@
  * Base style to affect HTML elements on a general scale.
  */
 
-@fontFamilyHeader: "Nixie One", sans-serif;
+@fontFamilyHeadings: "Nixie One", sans-serif;
 @fontFamilyBody: "Open Sans", sans-serif;
 @background: #f0f3f6;
 
 html {
     overflow-y: scroll;
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
 }
 
 .wrap-all {
@@ -42,7 +46,7 @@ html {
 .site-logo-text a {
     color: #333;
     font-size: 5em;
-    font-family: @fontFamilyHeader;
+    font-family: @fontFamilyHeadings;
     text-decoration: none;
 }
 
@@ -84,7 +88,7 @@ html {
     color: #333;
     font-family: @fontFamilyBody;
     text-decoration: none;
-    font-size: 1em;
+    // font-size: 1em;
 }
 
 .region-breadcrumb a:hover {
@@ -102,7 +106,7 @@ html {
     color: #333;
     font-family: @fontFamilyBody;
     text-decoration: none;
-    font-size: 1em;
+    // font-size: 1em;
 }
 
 .region-breadcrumb a:hover {
@@ -111,7 +115,7 @@ html {
 
 /* Main */
 p {
-    margin: 16px 0;
+    // margin: 16px 0;
 }
 
 ul {
@@ -119,32 +123,32 @@ ul {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: @fontFamilyHeader;
+    font-family: @fontFamilyHeadings;
     font-weight: bold;
-    line-height: 150%;
+    // line-height: 150%;
     border-bottom: solid 1px #666;
     width: 90%;
 }
 
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.7em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-h4 {
-    font-size: 1.3em;
-}
-
-h5 {
-    font-size: 1.2em;
-}
+// h1 {
+//     font-size: 2em;
+// }
+//
+// h2 {
+//     font-size: 1.7em;
+// }
+//
+// h3 {
+//     font-size: 1.5em;
+// }
+//
+// h4 {
+//     font-size: 1.3em;
+// }
+//
+// h5 {
+//     font-size: 1.2em;
+// }
 
 article {
     padding-bottom: 3em;
@@ -152,14 +156,14 @@ article {
 
 article p {
     font-family: @fontFamilyBody;
-    font-size: 1em;
-    line-height: 150%;
+    // font-size: 1em;
+    // line-height: 150%;
     max-width: 90%;
     font-weight: normal;
 }
 
 article h1 {
-    line-height: 150%;
+    // line-height: 150%;
 }
 
 /*
@@ -187,8 +191,8 @@ article img {
 
 .byline p {
     font-family: @fontFamilyBody;
-    font-size: 1em;
-    line-height: 150%;
+    // font-size: 1em;
+    // line-height: 150%;
     max-width: 90%;
     font-weight: normal;
 }
@@ -201,7 +205,7 @@ article img {
 .region-sidebar-right>.block {
     background-color: white;
     font-family: @fontFamilyBody;
-    font-size: 1em;
+    // font-size: 1em;
     margin: 1em;
     padding: 1em;
 }
@@ -225,8 +229,8 @@ article img {
     font-family: sans-serif;
     text-decoration: none;
     font-weight: lighter;
-    font-size: 1.2em;
-    line-height: 170%;
+    // font-size: 1.2em;
+    // line-height: 170%;
 }
 
 .block .toc a:hover {
