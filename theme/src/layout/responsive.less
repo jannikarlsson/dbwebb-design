@@ -19,35 +19,52 @@
     }
 }
 
+@media (max-width: 1100px) {
+
+    .inner-wrap {
+        #desinax-vgrid.grid(90%);
+    }
+}
+
 @media (max-width: 768px) {
+
+    .inner-wrap {
+        #desinax-vgrid.grid(90%);
+    }
+
     .rm-desktop {
         display: none;
     }
 
     .footer-column {
-        width: 100%;
-        padding: 0 1em 2em 1em;
+        #desinax-vgrid.column(@columns);
+        // width: 100%;
+        // padding: 0 1em 2em 1em;
     }
 
     .article img {
-        width: 100%;
+        #desinax-vgrid.column(@columns);
+    }
+
+    .byline img {
+        width: 25%;
     }
 
     /* Sidebar */
     .has-sidebar,
     .wrap-sidebar {
-        width: 100%;
+        #desinax-vgrid.column(@columns);
     }
 
     .has-sidebar-right,
     .has-sidebar-left,
     .region-sidebar-right,
     .region-sidebar-left {
-        float: none;
+        // float: none;
     }
 
     fieldset,
     form {
-        max-width: 90%;
+        #desinax-vgrid.column(@columns / 2);
     }
 }

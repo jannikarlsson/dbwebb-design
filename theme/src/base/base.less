@@ -19,14 +19,20 @@
 
 @fontFamilyHeadings: "Nixie One", sans-serif;
 @fontFamilyBody: "Open Sans", sans-serif;
+@fontFamilyCode: monospace;
 @background: #f0f3f6;
 
 html {
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 body {
     #desinax-hgrid.font(@fontSizeBody);
+
+    p {
+        margin-bottom: @magicNumber;
+    }
 }
 
 .wrap-all {
@@ -37,6 +43,7 @@ body {
 
 .outer-wrap-header {
     background-color: @background;
+    padding-top: 2em;
 }
 
 .region-header-col-1 {
@@ -46,8 +53,10 @@ body {
 .site-logo-text a {
     color: #333;
     font-size: 5em;
+    line-height: 1.1;
     font-family: @fontFamilyHeadings;
     text-decoration: none;
+
 }
 
 /* Navigation */
@@ -66,7 +75,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.5em;
-    padding: 0.8em;
+    line-height: 1.8333;
 
     &:hover {
         color: #999;
@@ -79,20 +88,23 @@ body {
 
 /* Breadcrumb*/
 
-.region-breadcrumb li {
-    display: inline-block;
-    list-style-type: none;
-}
+.region-breadcrumb {
+    line-height: 2.2;
 
-.region-breadcrumb a {
-    color: #333;
-    font-family: @fontFamilyBody;
-    text-decoration: none;
-    // font-size: 1em;
-}
+    li {
+        display: inline-block;
+        list-style-type: none;
+    }
 
-.region-breadcrumb a:hover {
-    color: #999;
+    a {
+        color: #333;
+        font-family: @fontFamilyBody;
+        text-decoration: none;
+
+        &:hover {
+            color: #999;
+        }
+    }
 }
 
 /* Next previous*/
@@ -106,7 +118,6 @@ body {
     color: #333;
     font-family: @fontFamilyBody;
     text-decoration: none;
-    // font-size: 1em;
 }
 
 .region-breadcrumb a:hover {
@@ -114,9 +125,6 @@ body {
 }
 
 /* Main */
-p {
-    // margin: 16px 0;
-}
 
 ul {
     padding: 0;
@@ -125,39 +133,16 @@ ul {
 h1, h2, h3, h4, h5 {
     font-family: @fontFamilyHeadings;
     font-weight: bold;
-    // line-height: 150%;
     border-bottom: solid 1px #666;
     width: 90%;
 }
 
-// h1 {
-//     font-size: 2em;
-// }
-//
-// h2 {
-//     font-size: 1.7em;
-// }
-//
-// h3 {
-//     font-size: 1.5em;
-// }
-//
-// h4 {
-//     font-size: 1.3em;
-// }
-//
-// h5 {
-//     font-size: 1.2em;
-// }
-
 article {
-    padding-bottom: 3em;
+    padding-bottom: @magicNumber;
 }
 
 article p {
     font-family: @fontFamilyBody;
-    // font-size: 1em;
-    // line-height: 150%;
     max-width: 90%;
     font-weight: normal;
 }
@@ -166,33 +151,25 @@ article h1 {
     // line-height: 150%;
 }
 
-/*
-article img {
-    max-width: 50%;
-}
-*/
-
 .right img {
     float: right;
-    margin: 2em;
+    margin: @magicNumber;
 }
 
 .left img {
     float: left;
-    margin-right: 2em;
+    margin-right: @magicNumber;
 }
 
 .byline {
     border: 1px solid grey;
     padding: 0.5em;
     overflow:auto;
-    margin-top: 2em;
+    margin-top: @magicNumber;
 }
 
 .byline p {
     font-family: @fontFamilyBody;
-    // font-size: 1em;
-    // line-height: 150%;
     max-width: 90%;
     font-weight: normal;
 }
@@ -205,9 +182,6 @@ article img {
 .region-sidebar-right>.block {
     background-color: white;
     font-family: @fontFamilyBody;
-    // font-size: 1em;
-    margin: 1em;
-    padding: 1em;
 }
 
 .region-sidebar-right>.block a {
@@ -226,38 +200,39 @@ article img {
 
 .block .toc a {
     color: black;
-    font-family: sans-serif;
+    font-family: @fontFamilyBody;
     text-decoration: none;
     font-weight: lighter;
-    // font-size: 1.2em;
-    // line-height: 170%;
-}
 
-.block .toc a:hover {
-    color: white;
+    &:hover {
+        color: white;
+    }
 }
 
 /* Footer */
 
 .outer-wrap-footer {
-   background-color: #333;
    font-family: Arial, sans-serif;
    color: #c1cdcc;
+   padding-bottom: @magicNumber;
+   background-color: #333;
+}
+
+.region-footer {
+    & h4 {
+        border: 0;
+    }
+
+    & a {
+        font-weight: bold;
+        color: white;
+
+        &:hover {
+            color: grey;
+        }
+    }
 }
 
 .region-footer>.block {
     text-align:center;
-}
-
-.region-footer h4 {
-    border: 0;
-}
-
-.region-footer a {
-    font-weight: bold;
-    color: white;
-
-    &:hover {
-        color: grey;
-    }
 }
