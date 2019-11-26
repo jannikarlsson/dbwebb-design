@@ -1,3 +1,3 @@
 #### Just nu
 
-Just nu uppdaterar jag stilmallen och delar upp den i moduler med LESS.
+Just nu experimenterar jag med att använda olika färgkombinationer i mina teman.

@@ -3,6 +3,12 @@
     display: none;
 }
 
+/* Hide flash image */
+
+.region-flash img {
+    display: none;
+}
+
 /* Hide large logo*/
 
 .site-logo img {
@@ -20,7 +26,17 @@
 @fontFamilyHeadings: "Nixie One", sans-serif;
 @fontFamilyBody: "Open Sans", sans-serif;
 @fontFamilyCode: monospace;
-@background: #f0f3f6;
+@background: #f8f8f8;
+@headerColor: #cfb3eb;
+@backgroundFooter: #333;
+@footerText: #c1cdcc;
+@footerTextHover: grey;
+@logoText: #333;
+@navbarText: #333;
+@navbarHover: #999;
+@breadcrumbText: @navbarText;
+@breadcrumbHover: @navbarHover;
+
 
 html {
     overflow-y: scroll;
@@ -42,26 +58,35 @@ body {
 /* Header */
 
 .outer-wrap-header {
-    background-color: @background;
-    padding-top: 2em;
-}
-
-.region-header-col-1 {
-    text-align: center;
+    background-color: @headerColor;
 }
 
 .site-logo-text a {
-    color: #333;
+    color: @logoText;
     font-size: 5em;
     line-height: 1.1;
     font-family: @fontFamilyHeadings;
     text-decoration: none;
+    margin-top: 0;
+}
 
+.region-header {
+    display: flex;
+}
+
+.region-header-col-1,
+.region-header-col-2 {
+    align-self: flex-end;
 }
 
 /* Navigation */
-.my-navbar {
-    text-align: center;
+// .my-navbar {
+//     text-align: center;
+// }
+
+.rm-default a {
+    padding-left:0;
+    padding-bottom: 0.6em;
 }
 
 .my-navbar li {
@@ -70,15 +95,16 @@ body {
 }
 
 .my-navbar a {
-    color: #333;
+    color: @navbarText;
     font-family: @fontFamilyBody;
     text-transform: uppercase;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 1.5em;
-    line-height: 1.8333;
+    font-size: 1.25em;
+    line-height: 1.2em;
 
     &:hover {
-        color: #999;
+        color: @navbarHover;
     }
 }
 
@@ -97,12 +123,12 @@ body {
     }
 
     a {
-        color: #333;
+        color: @breadcrumbText;
         font-family: @fontFamilyBody;
         text-decoration: none;
 
         &:hover {
-            color: #999;
+            color: @breadcrumbHover;
         }
     }
 }
@@ -115,16 +141,14 @@ body {
 }
 
 .next-previous a {
-    color: #333;
+    color: @breadcrumbText;
     font-family: @fontFamilyBody;
     text-decoration: none;
 }
 
 .region-breadcrumb a:hover {
-    color: #999;
+    color: @breadcrumbHover;
 }
-
-/* Main */
 
 ul {
     padding: 0;
@@ -133,7 +157,7 @@ ul {
 h1, h2, h3, h4, h5 {
     font-family: @fontFamilyHeadings;
     font-weight: bold;
-    border-bottom: solid 1px #666;
+    border-bottom: 0;
     width: 90%;
 }
 
@@ -147,8 +171,8 @@ article p {
     font-weight: normal;
 }
 
-article h1 {
-    // line-height: 150%;
+figure {
+    margin-left:0;
 }
 
 .right img {
@@ -212,10 +236,11 @@ article h1 {
 /* Footer */
 
 .outer-wrap-footer {
-   font-family: Arial, sans-serif;
-   color: #c1cdcc;
+   // font-family: Arial, sans-serif;
+   font-family: @fontFamilyBody;
+   color: @footerText;
    padding-bottom: @magicNumber;
-   background-color: #333;
+   background-color: @backgroundFooter;
 }
 
 .region-footer {
@@ -225,10 +250,10 @@ article h1 {
 
     & a {
         font-weight: bold;
-        color: white;
+        color: @footerText;
 
         &:hover {
-            color: grey;
+            color: @footerTextHover;
         }
     }
 }
