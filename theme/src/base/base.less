@@ -100,8 +100,8 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.25em;
-    line-height: 1.2em;
+    font-size: 1em;
+    line-height: 1.5em;
 
     &:hover {
         color: @navbarHover;
@@ -198,13 +198,18 @@ figure {
     font-weight: normal;
 }
 
+/* Blog */
+.blog-list h1, a {
+    text-decoration: none;
+}
+
 /* Sidebar */
 .wrap-sidebar>.block li {
     list-style-type: none;
 }
 
 .region-sidebar-right>.block {
-    background-color: white;
+    background-color: @background;
     font-family: @fontFamilyBody;
 }
 
