@@ -1,0 +1,101 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+ /* General */
+
+ .row {
+     #desinax-vgrid.row();
+     // margin-bottom: 12px;
+ }
+
+ .vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+ /**
+  * Variables
+  */
+
+
+ /**
+  * General layout
+  */
+
+ .inner-wrap {
+     #desinax-vgrid.grid(1100px);
+ }
+
+ /* Header */
+
+ .region-header {
+     #desinax-vgrid.grid(100%);
+     margin-bottom: @magicNumber;
+ }
+
+ /* Flash */
+
+ .region-flash {
+     #desinax-vgrid.column(24);
+     margin-bottom: 0;
+  }
+
+ /* Previous next */
+.next-previous {
+    #desinax-vgrid.column(16);
+    margin-bottom: @magicNumber;
+}
+
+ /* Breadcrumb */
+
+ .region-breadcrumb {
+     #desinax-vgrid.column(24);
+     margin-bottom: @magicNumber;
+ }
+
+  /* Main */
+
+ .region-main {
+     #desinax-vgrid.column(24);
+     margin-bottom: @magicNumber;
+ }
+
+ /* Sidebar page */
+
+ .has-sidebar {
+     #desinax-vgrid.column(16);
+ }
+
+ .wrap-sidebar {
+     #desinax-vgrid.column(8);
+ }
+
+ .has-sidebar-right,
+ .region-sidebar-left {
+     float: left;
+ }
+
+ .has-sidebar-left,
+ .region-sidebar-right {
+     float: right;
+ }
+
+
+
+ /* Footer */
+
+ .region-footer {
+     #desinax-vgrid.grid(1100px);
+     margin-bottom: @magicNumber;
+ }
+
+ .footer-column {
+     #desinax-vgrid.column(@columns / 3);
+ }

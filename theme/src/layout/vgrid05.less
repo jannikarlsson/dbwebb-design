@@ -1,0 +1,123 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+ /* General */
+
+ .row {
+     #desinax-vgrid.row();
+     // margin-bottom: 12px;
+ }
+
+ .vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+ /**
+  * Variables
+  */
+
+
+ /**
+  * General layout
+  */
+
+ .inner-wrap {
+     #desinax-vgrid.grid(1100px);
+ }
+
+ // .inner-wrap-header {
+ //     #desinax-vgrid.grid(100%);
+ // }
+
+ /* Header */
+
+ .outer-wrap-header {
+     padding-top: @magicNumber;
+     padding-bottom: 2 * @magicNumber;
+ }
+
+ .region-header-col-1 {
+     #desinax-vgrid.column(6);
+ }
+
+ .region-header-col-2 {
+     #desinax-vgrid.column(17);
+     #desinax-vgrid.push(1);
+ }
+
+ /* Flash */
+
+ .region-flash {
+     #desinax-vgrid.column(24);
+     margin-bottom: 0;
+  }
+
+ /* Previous next */
+.next-previous {
+    #desinax-vgrid.column(@columns);
+    margin-bottom: @magicNumber;
+}
+
+ /* Breadcrumb */
+
+ .region-breadcrumb {
+     #desinax-vgrid.column(24);
+     margin-bottom: @magicNumber;
+ }
+
+  /* Main */
+
+  .inner-wrap-main {
+      padding-top: @magicNumber;
+  }
+
+ .region-main {
+     #desinax-vgrid.column(24);
+     margin-bottom: @magicNumber;
+ }
+
+ /* Sidebar page */
+
+ .has-sidebar {
+     #desinax-vgrid.column(16);
+ }
+
+ .wrap-sidebar {
+     #desinax-vgrid.column(7);
+     #desinax-vgrid.push(1);
+ }
+
+ .has-sidebar-right,
+ .region-sidebar-left {
+     float: left;
+ }
+
+ .has-sidebar-left,
+ .region-sidebar-right {
+     float: right;
+ }
+
+
+
+ /* Footer */
+
+ .region-footer {
+     #desinax-vgrid.grid(1100px);
+     margin-bottom: @magicNumber;
+ }
+
+ .inner-wrap-main {
+     padding-top: @magicNumber;
+ }
+
+ .footer-column {
+     #desinax-vgrid.column(@columns / 3);
+ }

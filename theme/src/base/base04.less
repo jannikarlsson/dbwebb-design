@@ -1,0 +1,263 @@
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide flash image */
+
+.region-flash img {
+    display: none;
+}
+
+/* Hide large logo*/
+
+.site-logo img {
+    display: none;
+}
+
+.site-logo-text-icon img {
+    display: none;
+}
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+@fontFamilyHeadings: "Nixie One", sans-serif;
+@fontFamilyBody: "Open Sans", sans-serif;
+@fontFamilyCode: monospace;
+@background: #f8f8f8;
+@headerColor: #cfb3eb;
+@backgroundFooter: #333;
+@footerText: #c1cdcc;
+@footerTextHover: grey;
+@logoText: #333;
+@navbarText: #333;
+@navbarHover: #999;
+@breadcrumbText: @navbarText;
+@breadcrumbHover: @navbarHover;
+
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+
+    p {
+        margin-bottom: @magicNumber;
+    }
+}
+
+.wrap-all {
+    background-color: @background;
+}
+
+/* Header */
+
+.outer-wrap-header {
+    background-color: @headerColor;
+}
+
+.site-logo-text a {
+    color: @logoText;
+    font-size: 5em;
+    line-height: 1.1;
+    font-family: @fontFamilyHeadings;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.region-header {
+    display: flex;
+}
+
+.region-header-col-1,
+.region-header-col-2 {
+    align-self: flex-end;
+}
+
+/* Navigation */
+// .my-navbar {
+//     text-align: center;
+// }
+
+.rm-default a {
+    padding-left:0;
+    padding-bottom: 0.6em;
+}
+
+.my-navbar li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.my-navbar a {
+    color: @navbarText;
+    font-family: @fontFamilyBody;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.25em;
+    line-height: 1.2em;
+
+    &:hover {
+        color: @navbarHover;
+    }
+}
+
+.inner-wrap-flash img {
+    width: 100%;
+}
+
+/* Breadcrumb*/
+
+.region-breadcrumb {
+    line-height: 2.2;
+
+    li {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    a {
+        color: @breadcrumbText;
+        font-family: @fontFamilyBody;
+        text-decoration: none;
+
+        &:hover {
+            color: @breadcrumbHover;
+        }
+    }
+}
+
+/* Next previous*/
+
+.next-previous a {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.next-previous a {
+    color: @breadcrumbText;
+    font-family: @fontFamilyBody;
+    text-decoration: none;
+}
+
+.region-breadcrumb a:hover {
+    color: @breadcrumbHover;
+}
+
+ul {
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: @fontFamilyHeadings;
+    font-weight: bold;
+    border-bottom: 0;
+    width: 90%;
+}
+
+article {
+    padding-bottom: @magicNumber;
+}
+
+article p {
+    font-family: @fontFamilyBody;
+    max-width: 90%;
+    font-weight: normal;
+}
+
+figure {
+    margin-left:0;
+}
+
+.right img {
+    float: right;
+    margin: @magicNumber;
+}
+
+.left img {
+    float: left;
+    margin-right: @magicNumber;
+}
+
+.byline {
+    border: 1px solid grey;
+    padding: 0.5em;
+    overflow:auto;
+    margin-top: @magicNumber;
+}
+
+.byline p {
+    font-family: @fontFamilyBody;
+    max-width: 90%;
+    font-weight: normal;
+}
+
+/* Sidebar */
+.wrap-sidebar>.block li {
+    list-style-type: none;
+}
+
+.region-sidebar-right>.block {
+    background-color: white;
+    font-family: @fontFamilyBody;
+}
+
+.region-sidebar-right>.block a {
+    text-decoration: none;
+    color: #0e5555
+}
+
+.region-sidebar-right>.block a:hover {
+    text-decoration: none;
+    color: #1ca7a7
+}
+
+.block .toc li {
+    list-style-type: none;
+}
+
+.block .toc a {
+    color: black;
+    font-family: @fontFamilyBody;
+    text-decoration: none;
+    font-weight: lighter;
+
+    &:hover {
+        color: white;
+    }
+}
+
+/* Footer */
+
+.outer-wrap-footer {
+   // font-family: Arial, sans-serif;
+   font-family: @fontFamilyBody;
+   color: @footerText;
+   padding-bottom: @magicNumber;
+   background-color: @backgroundFooter;
+}
+
+.region-footer {
+    & h4 {
+        border: 0;
+    }
+
+    & a {
+        font-weight: bold;
+        color: @footerText;
+
+        &:hover {
+            color: @footerTextHover;
+        }
+    }
+}
+
+.region-footer>.block {
+    text-align:center;
+}
