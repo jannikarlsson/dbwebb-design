@@ -1,10 +1,10 @@
 ---
 title: "Jannis me-sida"
 ---
+[FIGURE src="image/kamel.jpg?w=400&height=400&crop-to-fit" class="article right border"]
+
 Jannis me-sida i designkursen
 =========================
-
-[FIGURE src="image/kamel.jpg?w=400" class="article right"]
 
 Jag är 33 år gammal och bor i Malmö sedan några år tillbaka, där jag jobbar med kommunikation på Malmö universitet. Jag har en grundutbildning i medie- och kommunikationsvetenskap bland annat, men är även kronisk distansstudent med poäng från åtta lärosäten, främst grundkurser i olika språk har det blivit.
 
